@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task - Day 2 (Adding CSS & JS)</title>
+
+    <link rel="stylesheet" href="2.css">
+</head>
+<body class="bg-yellow">
+    <h1 class="bg-red bottom-light-red">My first web page</h1>
+    <h2 class="bg-green">What this is</h2>
+    <p>Welcome to my first webpage. I created this webpage without the assistance of a webpage editor. Just my little text editor and a keen <b>understanding of html</b>.</p>
+
+    <h2 class="bg-green">Why this is</h2>
+    <ul class="font-red">
+        <li>To learn HTML</li>
+        <li>List element:</li>
+        <ol class="font-red">
+            <li>Home</li>
+            <li>FAQ</li>
+            <li>Contact</li>
+            <li>About</li>
+        </ol>
+        <li>Here I have created ordered and unordered list</li>
+    </ul>
+    <h2 class="bg-green">ZeusLearning.com</h2>
+    <a href="https://www.zeuslearning.com/" target="_blank" class="font-purple">This link will open zeuslearning.com in new tab</a>
+    <h2 class="bg-green">On click of following image navigate to Google.com</h2>
+    <a href="https://google.com/"><img src="https://cdn.vox-cdn.com/thumbor/2ECtQus43_-tjqtlxy0WE8peSEQ=/0x0:2012x1341/1400x1050/filters:focal(1006x670:1007x671)/cdn.vox-cdn.com/uploads/chorus_asset/file/15483559/google2.0.0.1441125613.jpg" alt="Google Logo" width="100px"></a>
+    <h2 class="font-gray">Some random table</h2>
+    <table class="bg-gray">
+        <tbody>
+            <tr>
+                <td>Row1, cell 1</td>
+                <td>Row1, cell 2</td>
+                <td>Row1, cell 3</td>
+            </tr>
+            <tr>
+                <td>Row2, cell 1</td>
+                <td>Row2, cell 2</td>
+                <td>Row2, cell 3</td>
+            </tr>
+            <tr>
+                <td>Row3, cell 1</td>
+                <td>Row3, cell 2</td>
+                <td>Row3, cell 3</td>
+            </tr>
+            <tr>
+                <td>Row4, cell 1</td>
+                <td>Row4, cell 2</td>
+                <td>Row4, cell 3</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h2 class="font-gray">Some random form</h2>
+    <p><b>Note:</b>It looks the part, but won't do anything.</p>
+    <form id="form">
+        <label for="name">Name:</label> <br />
+        <input id="name" name="name" type="text" placeholder="Your Name"> <br />
+        <br>
+        <label for="comment">Comments</label> <br />
+        <textarea name="comment" id="comment" rows="8" placeholder="Your comments"></textarea> <br />
+        <br>
+        <label for="gender">Are you:</label> <br />
+        <div>
+            <input type="radio" id="male" name="gender"> Male <br />
+            <input type="radio" id="female" name="gender"> Female <br />
+        </div>
+        <br>
+        <button id="submit">Submit Query</button>
+    </form>
+</body>
+<script src="3.js"></script>
+</html>

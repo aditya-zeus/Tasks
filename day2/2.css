@@ -1,0 +1,45 @@
+table, th, td {
+    border: 1px solid black;
+}
+
+/* CSS for Task 2 */
+.bg-yellow {
+    background-color: #ffffcc;
+}
+
+.bg-red {
+    background-color: darkred;
+    font-family: monospace;
+    text-align: center;
+    letter-spacing: 10px;
+    color: white;
+}
+
+.bottom-light-red {
+    border-bottom: 10px solid #cc0000;
+    margin-bottom: 2px;
+}
+
+.bg-green {
+    margin-top: 5px;
+    background-color: green;
+    color: white;
+    padding-left: 15px;
+}
+
+.font-red {
+    color: darkred;
+}
+
+.font-purple {
+    color: #ab5899;
+    text-decoration: none;
+}
+
+.font-gray {
+    color: gray;
+}
+
+table.bg-gray {
+    background-color: lightgray;
+}
