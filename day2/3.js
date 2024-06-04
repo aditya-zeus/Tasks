@@ -1,6 +1,8 @@
 const submit = document.getElementById("submit");
 const username = document.getElementById("name");
 const comment = document.getElementById("comment");
+const genderMale = document.getElementById("male");
+const genderFemale = document.getElementById("male");
 submit.addEventListener("click", (e) => {
     e.preventDefault();
     if(username.value === "") {
@@ -15,8 +17,6 @@ submit.addEventListener("click", (e) => {
         return false;
     }
 
-    const genderMale = document.getElementById("male");
-    const genderFemale = document.getElementById("male");
 
     if(!genderMale.checked && !genderFemale.checked) {
         alert("All fields are compulsory! - Gender missing")
