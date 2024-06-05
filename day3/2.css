@@ -1,0 +1,51 @@
+.container {
+    color: white;
+    display: grid;
+    grid-template: 50px 80px 80px 50px / 100px 150px 150px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    gap: 1px;
+
+    grid-template-areas: 
+        "h h h"
+        "s c c"
+        "s d e"
+        "f f f"
+    ;
+}
+
+.header {
+    background-image: linear-gradient(to bottom right, #7054e6, #907de3);
+    grid-area: h;
+}
+
+.sidebar {
+    background-image: linear-gradient(to bottom right, #3ad3cc, #2ba9a2);
+    line-height: 150px;
+    grid-area: s;
+    
+}
+
+.content1 {
+    background-image: linear-gradient(to bottom right, #6b53d9, #3ad8dc);
+    line-height: 80px;
+    grid-area: c;
+}
+
+.content2 {
+    background-image: linear-gradient(to bottom right, #6b53d9, #3ad8dc);
+    line-height: 80px;
+    grid-area: d;
+}
+
+.content3 {
+    background-image: linear-gradient(to bottom right, #6b53d9, #3ad8dc);
+    line-height: 80px;
+    grid-area: e;
+}
+
+.footer {
+    background-image: linear-gradient(to bottom right, #7054e6, #907de3);
+    grid-area: f;
+}
