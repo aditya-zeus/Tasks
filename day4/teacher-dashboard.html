@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task - Day 4 (Teacher Dashboard)</title>
+
+    <link rel="stylesheet" href="teacher-dashboard.css" />
+  </head>
+  <body>
+    <nav>
+      <img
+        id="nav-logo"
+        src="./assets/icons/header_logo.svg"
+        alt="Quantum header logo"
+      />
+      <ul>
+        <li class="dashboard">DASHBOARD</li>
+        <li>CONTENT</li>
+        <li>USERS</li>
+        <li>REPORTS</li>
+        <li>ADMIN</li>
+      </ul>
+      <img src="./assets/icons/alerts.svg" alt="Notifications" />
+      <img src="./assets/icons/announcements.svg" alt="Announcements" />
+      <img src="./assets/icons/account_circle.svg" alt="Account circle" />
+      <img
+        id="toggleMenu"
+        src="./assets/icons/hamburger-menu.svg"
+        alt="Open Menu"
+      />
+    </nav>
+
+    <div class="main-content">
+      <div class="selection">
+        <div class="course-selection">
+          <img src="./assets/icons/courses.svg" alt="Courses" />
+          <p>
+            <b>4</b>
+            <span>Courses</span>
+          </p>
+        </div>
+        <div class="class-selection">
+          <img src="./assets/icons/classes.svg" alt="Courses" />
+          <p>
+            <b>4</b>
+            <span>Classes</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="course-detail">
+        <p>Showing 4 of 4 courses</p>
+        <div>
+            <label for="sortSelection">Sort by:</label>
+            <select name="sort-selection" id="sortSelection">
+              <option value="Course name">Course Name</option>
+              <option value="Class name">Class Name</option>
+              <option value="Other">Other</option>
+            </select>
+            <img src="./assets/icons/sort.svg" alt="">
+        </div>
+      </div>
+      <hr id="divider">
+      <div class="courses">
+        <!-- Card 1 -->
+        <div class="card">
+          <img
+            src="./assets/images/acceleration_image.png"
+            alt="Acceleration | Physics"
+          />
+          <div class="desc">
+            <div>
+              <h4 class="card-title">Acceleration</h4>
+              <img src="./assets/icons/favourite.svg" alt="Favourite course" />
+            </div>
+            <p>
+              <span class="subject">Physics</span>
+              <span class="grade">Grade 7 + 2</span>
+            </p>
+            <p>
+              <span class="ult-num">4</span>
+              <span class="ult-desc">Units</span>
+              <span class="ult-num">18</span>
+              <span class="ult-desc">Lessons</span>
+              <span class="ult-num">24</span>
+              <span class="ult-desc">Topics</span>
+            </p>
+            <select name="class-name" class="class-name">
+              <option value="All Classes">All Classes</option>
+              <option value="Mr. Frank's Class A">Mr. Frank's Class A</option>
+              <option value="Mr. Frank's Class A" selected>
+                Mr. Frank's Class B
+              </option>
+              <option class="no-class" value="No Classes">No Classes</option>
+            </select>
+
+            <p class="course-details">
+              <span class="student-count">50 Students</span>
+              <span>21-Jan-2020</span>
+              <span>21-Aug-2020</span>
+            </p>
+          </div>
+          <br />
+          <hr />
+          <div class="others">
+            <img src="./assets/icons/preview.svg" alt="Course Preview" />
+            <img src="./assets/icons/manage course.svg" alt="Manage Course" />
+            <img
+              src="./assets/icons/grade submissions.svg"
+              alt="Grade submission"
+            />
+            <img src="./assets/icons/reports.svg" alt="Reports" />
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <img
+            src="./assets/images/displacement_image.png"
+            alt="Displacement | Physics"
+          />
+          <div class="desc">
+            <div>
+              <h4 class="card-title">Displacement, Velocity and Speed</h4>
+              <img src="./assets/icons/favourite.svg" alt="Favourite course" />
+            </div>
+            <p>
+              <span class="subject">Physics 2</span>
+              <span class="grade">Grade 6 + 3</span>
+            </p>
+            <p>
+              <span class="ult-num">2</span>
+              <span class="ult-desc">Units</span>
+              <span class="ult-num">15</span>
+              <span class="ult-desc">Lessons</span>
+              <span class="ult-num">20</span>
+              <span class="ult-desc">Topics</span>
+            </p>
+            <select name="class-name" class="class-name">
+              <option value="All Classes">All Classes</option>
+              <option value="Mr. Frank's Class A">Mr. Frank's Class A</option>
+              <option value="Mr. Frank's Class A">Mr. Frank's Class B</option>
+              <option class="no-class" value="No Classes" selected>
+                No Classes
+              </option>
+            </select>
+
+            <p class="course-details" style="display: none">
+              <span class="student-count">50 Students</span>
+              <span>21-Jan-2020</span>
+              <span>21-Aug-2020</span>
+            </p>
+          </div>
+          <br />
+          <hr />
+          <div class="others">
+            <img src="./assets/icons/preview.svg" alt="Course Preview" />
+            <img src="./assets/icons/manage course.svg" alt="Manage Course" />
+            <img
+              src="./assets/icons/grade submissions.svg"
+              alt="Grade submission"
+            />
+            <img src="./assets/icons/reports.svg" alt="Reports" />
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+          <img src="./assets/images/biology_class.png" alt="Biology" />
+          <div class="desc">
+            <div>
+              <h4 class="card-title">
+                Introduction to Biology: Micro organisms and how they affect
+              </h4>
+              <img src="./assets/icons/favourite.svg" alt="Favourite course" />
+            </div>
+            <p>
+              <span class="subject">Biology</span>
+              <span class="grade">Grade 4 + 1</span>
+            </p>
+            <p>
+              <span class="ult-num">5</span>
+              <span class="ult-desc">Units</span>
+              <span class="ult-num">16</span>
+              <span class="ult-desc">Lessons</span>
+              <span class="ult-num">22</span>
+              <span class="ult-desc">Topics</span>
+            </p>
+            <select name="class-name" class="class-name">
+              <option value="All Classes" selected>All Classes</option>
+              <option value="Mr. Frank's Class A">Mr. Frank's Class A</option>
+              <option value="Mr. Frank's Class A">Mr. Frank's Class B</option>
+              <option class="no-class" value="No Classes">No Classes</option>
+            </select>
+
+            <p class="course-details">
+              <span class="student-count">300 Students</span>
+              <!-- <span>21-Jan-2020</span>
+                <span>21-Aug-2020</span> -->
+            </p>
+          </div>
+          <br />
+          <hr />
+          <div class="others">
+            <img src="./assets/icons/preview.svg" alt="Course Preview" />
+            <img
+              src="./assets/icons/manage course.svg"
+              alt="Manage Course"
+              style="opacity: 0.4"
+            />
+            <img
+              src="./assets/icons/grade submissions.svg"
+              alt="Grade submission"
+              style="opacity: 0.4"
+            />
+            <img src="./assets/icons/reports.svg" alt="Reports" />
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+          <img
+            src="./assets/images/high_school_intro.png"
+            alt="Intro | Mathematics"
+          />
+          <div class="desc">
+            <div>
+              <h4 class="card-title">
+                Introduction to High School Mathematics
+              </h4>
+              <img src="./assets/icons/favourite.svg" alt="Favourite course" />
+            </div>
+            <p>
+              <span class="subject">Mathematics</span>
+              <span class="grade">Grade 8 + 3</span>
+            </p>
+            <p style="display: none">
+              <span class="ult-num">44</span>
+              <span class="ult-desc">Units</span>
+              <span class="ult-num">18</span>
+              <span class="ult-desc">Lessons</span>
+              <span class="ult-num">24</span>
+              <span class="ult-desc">Topics</span>
+            </p>
+            <select name="class-name" class="class-name">
+              <option value="All Classes">All Classes</option>
+              <option value="Mr. Frank's Class A" selected>
+                Mr. Frank's Class A
+              </option>
+              <option value="Mr. Frank's Class A">Mr. Frank's Class B</option>
+              <option class="no-class" value="No Classes">No Classes</option>
+            </select>
+
+            <p class="course-details">
+              <span class="student-count">44 Students</span>
+              <span>14-Oct-2019</span>
+              <span>20-Oct-2020</span>
+            </p>
+          </div>
+          <br />
+          <hr />
+          <div class="others">
+            <img src="./assets/icons/preview.svg" alt="Course Preview" />
+            <img src="./assets/icons/manage course.svg" alt="Manage Course" />
+            <img
+              src="./assets/icons/grade submissions.svg"
+              alt="Grade submission"
+            />
+            <img src="./assets/icons/reports.svg" alt="Reports" />
+          </div>
+        </div>
+      </div>
+      <p class="extras">
+        <span class="about">About</span>
+        <span>Contact Us</span>
+      </p>
+    </div>
+    <footer>
+      <img src="./assets/icons/footer_logo.svg" alt="Quantum footer logo" />
+      <span
+        >Copyright &copy; 2020-2021 Zeus Systems Pvt. Ltd. All rights
+        reserved.</span
+      >
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,185 @@
+@font-face {
+    font-family: 'Quicksand';
+    src: url("./assets/quicksand_font/Quicksand-VariableFont_wght.ttf");
+}
+
+* {
+    font-family: 'Quicksand';
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    background-image: url("./assets/images/header_pattern.svg");
+    height: 50px;
+    border-bottom: 2px solid #3ac7ec;
+}
+
+header > img {
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.main-content {
+    /* width: 100%;
+    height: 798px; */
+    height: 100%;
+    background-color: #eee;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    width: 488px;
+    height: 550px;
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    gap: 30px;
+    border-top: 3px solid #3ac7ec;
+
+    flex-grow: 1;
+    flex-shrink: 1;
+    /* flex-basis: 488px; */
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-header > img {
+    width: 17px;
+}
+
+.form-header > h3 {
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 24px;
+}
+
+#state {
+    width: 100%;
+}
+
+#district {
+    width: 100%;
+}
+
+#username {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #e8e8e8;
+    outline: none;
+}
+
+#password {
+    width: 90%;
+    border: none;
+    border-bottom: 2px solid #e8e8e8;
+    outline: none;
+}
+
+.showPassword {
+    float: right;
+    border-bottom: 2px solid #e8e8e8;
+}
+
+#login {
+    width: 30%;
+    height: 40px;
+    align-self: center;
+    background-color: #3fd28b;
+    color: white;
+    border: none;
+    box-shadow: 0px 3px 5px #0000003D;
+}
+
+#login:hover {
+    background-color: rgb(11, 240, 129);
+}
+
+.forgot {
+    color: #1F7A54;
+    font-size: 12px;
+    display: block;
+    text-align: right;
+}
+
+.forgot:hover {
+    cursor: pointer;
+    color: #0b3f29;
+}
+
+select {
+    border: none;
+    background-color: white;
+    border-bottom: 2px solid #e8e8e8;
+    appearance: none;
+    background-image: url('./assets/icons/arrow-down.svg');
+    background-repeat: no-repeat;
+    background-position-x: right;
+    font-weight: 500;
+}
+
+input {
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+#rememberMe {
+    background-color: green;
+    color: green;
+}
+
+.extras {
+    text-align: center;
+    color: #1F7A54;
+}
+
+.about {
+    margin-right: 5px;
+    padding-right: 10px;
+    border-right: 1px solid #dcdcdc;
+}
+
+@media only screen and (max-width: 600) {
+    .main-content {
+        width: 100%;
+    }
+
+    form {
+        width: inherit;
+        background-color: red;
+    }
+
+    #username {
+        background-color: red;
+    }
+}
+
+footer {
+    background-image: linear-gradient(to bottom right, #e0e1e1, #e0e1e1);
+    height: 50px;
+    text-align: center;
+}
+
+footer > img { 
+    margin-top: 5px;
+    border-right: 1px solid #dcdcdc;
+    margin-right: 10px;
+    padding-right: 5px;
+    position: relative;
+    top: 6px;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task - Day 4 (Quantum Login Page)</title>
+
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <header>
+      <img src="./assets/icons/header_logo.svg" alt="Quantum header logo" />
+    </header>
+
+    <div class="main-content">
+      <form action="teacher-dashboard.html">
+        <div class="form-header">
+          <img src="./assets/icons/back.svg" alt="Go back" />
+          <h3>Log in with Quantum</h3>
+        </div>
+        <div class="way-to-login">
+          <input type="radio" name="login-way" id="district-way" required/>
+          <label for="district-way">District</label>
+
+          <input type="radio" name="login-way" id="school-way" required />
+          <label for="school-way">Independent School</label>
+        </div>
+
+        <div>
+          <label for="state">State*</label> <br />
+          <select name="state" id="state" required>
+            <option value="alabama">Alabama</option>
+            <option value="georgia">Georgia</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="district">District*</label> <br />
+          <select name="district" id="district" required>
+            <option value="alabama">Alabama School District</option>
+            <option value="georgia">Georgia School District</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Username/Email ID*"
+            required
+          />
+          <br />
+          <span class="forgot">FORGOT USERNAME?</span>
+        </div>
+
+        <div>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password*"
+            required
+          />
+          <img class="showPassword" src="./assets/icons/preview.svg" alt="">
+          <br />
+          <span class="forgot">FORGOT PASSWORD?</span>
+        </div>
+
+        <div>
+          <input type="checkbox" name="rememberMe" id="rememberMe" />
+          <label for="rememberMe">Remember Me</label>
+        </div>
+
+        <br />
+
+        <input type="submit" value="LOG IN" id="login" />
+      </form>
+      <p class="extras">
+        <span class="about">About</span>
+        <span>Contact Us</span>
+      </p>
+    </div>
+
+    <footer>
+      <img src="./assets/icons/footer_logo.svg" alt="Quantum footer logo" />
+      <span
+        >Copyright &copy; 2020-2021 Zeus Systems Pvt. Ltd. All rights
+        reserved.</span
+      >
+    </footer>
+  </body>
+</html>
